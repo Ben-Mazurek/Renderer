@@ -1,7 +1,7 @@
 #include "RmShader.h"
 
 
-RmShader::RmShader(int screenWidth, int screenHeight) : Shader("vertex.vert", "fragment.frag") {
+RmShader::RmShader(int screenWidth, int screenHeight) : Shader("Shaders/vertex.vert", "Shaders/fragment.frag") {
 	startTime = clock();
 	glUseProgram(shaderProgram);
 	GLint loc = glGetUniformLocation(shaderProgram, "iResolution");
