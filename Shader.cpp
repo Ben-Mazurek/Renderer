@@ -6,6 +6,7 @@ std::string Shader::readFromFile(std::string path) {
 		std::ifstream file;
 		file.open(path);
 		std::string results((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>()); //https://stackoverflow.com/questions/18398167/how-to-copy-a-txt-file-to-a-char-array-in-c
+		file.close();
 		return results;
 }
 
